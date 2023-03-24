@@ -18,7 +18,7 @@ const reducer = (state, action) => {
                    
                     arr.map((food, index) => {
                         // console.log(action.id,action.qty,action.price,action.size);
-                        if (food.id === action.id&&food.size==action.size) {
+                        if (food.id === action.id&&food.size===action.size) {
                             // console.log(food.qty, parseInt(action.qty), action.price + food.price)
                             arr[index] = { ...food, qty: action.qty, price: action.price}
                         }
