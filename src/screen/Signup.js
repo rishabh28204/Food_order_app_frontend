@@ -9,7 +9,7 @@ export default function Signup() {
 let [xx,setxx]=useState(true);
     const handlesubmit= async(e)=>{
             e.preventDefault();
-            const response=await fetch('http://localhost:5000/api/createuser',{
+            const response=await fetch('https://foodorderapp12.onrender.com/api/createuser',{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
